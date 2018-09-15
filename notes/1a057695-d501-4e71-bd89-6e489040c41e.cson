@@ -1,0 +1,46 @@
+createdAt: "2018-06-30T13:45:31.890Z"
+updatedAt: "2018-08-19T03:41:27.207Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd4debf0edd3bd73c5f"
+title: "字节"
+content: '''
+  # 字节
+  
+  - `数据类型：byte,short,int,long,float,double,char,boolean`
+  
+  ### 字节转换
+  > 1G = 1024M = 1024kb * 1024kb = (1024 * 1024B) × (1024 * 1024B)
+  > 1Byte = 1B = 1字节=8Bit
+  > 1个字母一个字节，一个汉字UTF-8三个字节，GBK编码2个字节
+  
+  ### 数值取值范围
+  |数据类型|字节数|所占位数|数的范围|
+  |:-		|:-		|:-		|:-					|	
+  |boolean|	1	|	8	|	`true/false`	|
+  |char	|	2	|	16	|		0-65535		|
+  |byte	|	1	|	8	|	 -2^7 -- 2^7-1	|
+  |short	|	2	|	16	|	-2^15 -- 2^15-1	|
+  |int	|	4	|	32	|	-2^31 -- 2^31-1	|
+  |long	|	8	|	64	|	-2^63 -- 2^63-1	|
+  |float	|	4	|	32	|		待定..	  |
+  |double	|	8	|	64	|		待定..	  |
+  	
+  
+  ### 强制类型转换
+  >`byte,short,char做数据运算的时候会强制转换为int类型`
+  >`如果操作数是float,long,double类型，计算结果就是操作数的类型`
+  >基本数据类型由低级到高级：
+  > `(byte,short,char) --> int --> long --> float --> double`
+  > `byte,short,char之间不能自动转换，需手动转换。`
+  
+  
+'''
+tags: [
+  "字节"
+  "字符"
+  "bit"
+  "byte"
+  "kb"
+]
+isStarred: false
+isTrashed: false

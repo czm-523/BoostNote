@@ -1,0 +1,34 @@
+createdAt: "2018-06-29T16:18:35.814Z"
+updatedAt: "2018-07-01T05:34:56.585Z"
+type: "MARKDOWN_NOTE"
+folder: "7013a939e6a93076d533"
+title: "集合"
+content: '''
+  # 集合
+  ---
+  - 数组转集合：`List<Integer> list = Arrays.asList(arr); //arr本身就是Integer`
+  - 集合转数组：list.toArray();
+  **集合排序待补充....**
+  
+  ```java
+  	// 遍历map方法一 
+  	Map map = new HashMap();
+  	Set<Map.Entry<String,String>> entryset = map.entrySet();
+  	for(Map.Entry<String,String> e :entryset){
+  		int a = e.getKey();			 
+  		Integer b = e.getValue();  	 
+  	}
+  
+  	//遍历map方法二
+  	Set<String> keySet = map.keySet();
+  	for(String key:keySet){
+  		System.out.println(map.get(key));
+  	}
+  ```
+'''
+tags: [
+  "集合框架"
+]
+isStarred: false
+isTrashed: false
+isPinned: false

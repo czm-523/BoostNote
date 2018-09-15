@@ -1,0 +1,66 @@
+createdAt: "2018-07-04T12:43:50.289Z"
+updatedAt: "2018-07-04T12:51:39.236Z"
+type: "MARKDOWN_NOTE"
+folder: "d647ce9933e1c52796de"
+title: "多线程的创建"
+content: '''
+  # 多线程的创建
+  
+  ```Java 
+  class test8 {
+      public static void main(String[] args) {
+  		// 方法一
+          new Thread(new Runnable() {
+              @Override
+              public void run() {
+                  for (int i = 0; i < 100; i++) {
+                      System.out.println(i + "内部类");
+                  }
+              }
+          }).run();
+  
+          // 方法二，继承Thread,重写run方法，调用start()方法启动
+          new Too().start();
+  
+          // 方法三，实现Runnable接口，重写run方法，调用start()方法启动
+          new Thread(new Too()).start();
+  		
+  		// 方法四，使用线程池创建线程
+  		Executors.newSingleThreadExecutor().submit(new Runnable() {
+              @Override
+              public void run() {
+                  for (int i = 0; i <100; i++) {
+                      System.out.println("使用线程池创建线程");
+                  }
+              }
+          });
+      }
+  }
+  
+  class Too extends Thread {
+      @Override
+      public void run() {
+          for (int i = 0; i < 50; i++) {
+              System.out.println(i + "我是继承Thread");
+          }
+      }
+  }
+  
+  class Boo implements Runnable {
+      @Override
+      public void run() {
+          for (int i = 0; i < 100; i++) {
+              System.out.println(i + "我是实现Runnable接口");
+          }
+      }
+  }
+  
+  
+  
+  ```
+'''
+tags: [
+  "创建线程"
+]
+isStarred: false
+isTrashed: false

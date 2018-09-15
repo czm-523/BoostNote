@@ -1,0 +1,96 @@
+createdAt: "2018-06-30T14:33:04.757Z"
+updatedAt: "2018-07-01T05:32:57.988Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd4debf0edd3bd73c5f"
+title: "类"
+content: '''
+  # 类
+  ## 1.接口&抽象方法
+  > 接口和抽象方法都不能被private和final修饰，只能被public修饰。
+  ``` java
+  public abstract interface animal{   // 接口可以被abstract修饰，接口只能被public修饰
+  	int a = 1;    					// 所有的常量必须初始化值，且默认被static final修饰
+  	public void eat(Food f);		// 默认是被abstract修饰，只是申明方法名和参数，没有方法体。不能被static,final修饰
+  }
+  			
+  public interface cat{}							// 接口没有构造方法
+  public interface lCat extends animal,cat{} 		// 接口可以多继承 ，接口不能继承抽象类
+  
+  public abstract whiteCat implements cat{}       // 抽象类可以实现接口
+  public abstract blackCat extends whiteCat{		// 抽象类可以继承抽象类
+  	public blackCat(){} 						// 抽象方法可以有构造方法
+  },    
+  ```
+  
+  ## 2.内部类
+  ```Java
+  public class Aoo {
+      private static int Yoo = 10;
+      private String Xoo = "10";
+      private double Zoo = 0.0;
+  
+      private void add() {}
+      public static void main(String[] args) {
+          Aoo test5 = new Aoo();
+          Boo aoo = test5.new Boo();       // 非静态内部类的创建必须先创建外部类
+          Coo coo = new Coo();             // 静态内部类可以直接创建对象而不使用外部类来创建，因为外部类不是静态的(外部类public不可能是静态的)。
+                                           // 静态内部类没有指向外部类的引用，因为不是由外部类创建的
+      }
+      public class Boo {
+          private int NYoo = Yoo;         // 直接使用外部类的私有的静态变量。
+          private String Xoo = Aoo.this.Xoo; // 内部类和外部类变量重名时，直接使用外部类私有的的非静态变量
+          private double NZoo = Zoo; 		// 直接使用外部类的变量。
+  
+          public void addSon() {add();}   // 直接使用外部类的成员方法
+      }
+      public static class Coo {}
+  }
+  
+  ```
+  ## 3.重写&重载
+  重写
+  两同：方法名相同，参数列表，返回值相同
+  两小：子类的返回值类型小于或等于父类，子类抛出异常小于或等于父类
+  - 返回值类型为void或者基本数据类型，返回值类型必须相同
+  - 引用类型返回值可以相等
+  - 静态方法的重写： 父类的静态方法可以被子类同名的静态方法重写， 此时隐藏了父类的方法；父类的静态方法不能被子类非静态的方法重写 （编译错误） ； 父类非静态的方法不能被子类重写为静态方法
+  
+  `重写和重载的区别：`
+  > 1.重写在两个类中必须继承，重载一个类中不许要继承。
+  2.重写的方法名,参数列表,返回类型相同，重载只需要方法名相同。
+  3.重写的方法修饰符大于或等于父类的方法，重载没有该限制
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

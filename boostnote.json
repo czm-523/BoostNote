@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "key": "2bd4debf0edd3bd73c5f",
+      "color": "#3FD941",
+      "name": "基础知识"
+    },
+    {
+      "key": "d647ce9933e1c52796de",
+      "color": "#2BA5F7",
+      "name": "线程"
+    },
+    {
+      "key": "7013a939e6a93076d533",
+      "color": "#FF8E00",
+      "name": "集合"
+    },
+    {
+      "key": "7e29a740260ac6dc97a7",
+      "color": "#B013A4",
+      "name": "IO&NIO"
+    },
+    {
+      "key": "1d33070d7b3cf6e3ea1b",
+      "color": "#FF8E00",
+      "name": "注解&反射&枚举"
+    },
+    {
+      "key": "7f7e2baaf84bc83b1e55",
+      "color": "#E8D252",
+      "name": "泛型"
+    },
+    {
+      "key": "db9140fb74b73d8b0ebc",
+      "color": "#B013A4",
+      "name": "正则表达式"
+    },
+    {
+      "key": "d6c5504760b5a5c4b561",
+      "color": "#E10051",
+      "name": "算法"
+    }
+  ],
+  "version": "1.0"
+}

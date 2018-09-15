@@ -1,0 +1,16 @@
+createdAt: "2018-07-26T12:18:16.555Z"
+updatedAt: "2018-07-26T12:23:20.543Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd4debf0edd3bd73c5f"
+title: "动态表结构"
+content: '''
+  # 动态表结构
+  | 接口名     |    序号 | 名称    |  校验| 长度 | 
+  | :-------- | -------:| :--     | :-  |:-    | 
+  | wechat    |    1 	  |  seqNo  | reg | 30   | 
+  | wechat    |    2    |  name   | reg | 50   |
+  | wechat    |    3    |  age    | reg | 2    | 
+'''
+tags: []
+isStarred: false
+isTrashed: false

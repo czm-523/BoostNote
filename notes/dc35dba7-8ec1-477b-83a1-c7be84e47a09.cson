@@ -1,0 +1,115 @@
+createdAt: "2018-06-27T13:34:10.273Z"
+updatedAt: "2018-07-01T09:18:33.993Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd4debf0edd3bd73c5f"
+title: "基础知识总结"
+content: '''
+  # 基础知识总结
+   ## 1. String小知识点
+   ``` java	
+  String a = "";  									a.length() = 0;
+  String null; 										编译报错
+  String 字符串拼接待补充......
+  
+  	
+  StringBuilder sbul = new StringBuilder();	//线程安全，速度慢
+  StringBuffer  sbuf = new StringBuffer();	//线程不安全，速度慢
+  
+  String s = "www.oracle.com";
+  s.indexOf"ac");			// 返回a的下表，没有返回-1
+  s.indexOf("a","2");		// 从第二个位置开始找
+  s.lastIndexOf（"ac");   // 最后出现ac的位置
+  s.substr(2,6)；		   // 截取2-5的字符串，包括2，不包括6
+  s.substr(3)；		   // 截取从3(包括)到结尾
+  
+  ```
+  ----
+  #### return 和finally到底谁先返回：
+  ``` java 
+  // 谜一样的代码
+  	static int x = 1;
+  	public static void main(String[] args) throws InterruptedException {
+  		System.out.println(test());
+  		Thread.sleep(500);
+  		System.out.println(x);
+  	}
+  	static int test() {
+  		try {
+  			return x;
+  		} finally {
+  			++x;
+  		}
+  	}
+  ```
+  
+  <br>
+  
+  ---
+  
+  ## 4.内存模型
+  > 小结：一个对象的引用可以更换对象指向到值，但是一个引用只能指向一个对象，而对象的值可以被多个引用所指向。
+  > Person p；					  //只是申明一个Person类型的引用，并没有指向任何的堆内存的对象。
+  > Person p = new Person();     //实际是在堆内存中生成一个Person对象，并将P指向该对象。
+  > **对象的引用在同一个时刻只能同时指向一个对象，而对象的可以被多个引用所指向。**
+  > `堆：存储new出来的对象(成员变量的引用和值),对象创建时存在，回收时消失`
+  > `栈：存储方法中的局部变量的引用和值，方法调用时，局部变量等信息存入栈中，方法调用完成后从栈中移除。`
+  > `代码区：专门存放方法、代码块`
+  > `代码区：专门存放方法、代码块`
+  
+  ## 5.细节补充
+  - switch case 中case后面支持的类型包括：byte,short,int,char,String
+  - |字段|描述|
+  - |:-|:-|
+  - |final|修饰的属性不可变，方法不可覆盖，类不可继承|
+  - |finally|异常处理结构的一部分，表示总是执行|
+  - |Finalize|是Object类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法,可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等|
+  - 成员变量包含默认值，局部变量不包含默认值，必须初始化才能用。
+  
+  > equals和==
+  > 如果两个对象equals方法返回true，则他们的hashcode一定相同，但是如果两个对象的hashcode相同，但是他们未必相同。
+  > `equals比较的是两个对象是否是相同的，而==比较的是两个对象是不是同一个引用地址。没有重写equals方法时，默认使用的是Object类的equals方法，即和==功能相同比较的是引用地址`
+  
+  
+  ## switch case语法
+  ```Java
+     switch (a) {
+  		default:// default可以不在最后一行，但是下面的case都会满足直到遇到break，输出default,1,2
+  			System.out.println("default");
+  		case 1: {
+  			Systln("1"); // 此处可以加上大括号
+  		}
+  		case 2:
+  			System.out.println("2");
+  			break;					//break结束switch
+  		case 3:
+  			System.out.println("3");
+  	}
+  ```
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+tags: [
+  "基础"
+]
+isStarred: false
+isTrashed: false
+isPinned: false
