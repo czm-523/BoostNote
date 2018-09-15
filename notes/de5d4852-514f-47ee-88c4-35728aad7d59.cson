@@ -1,5 +1,5 @@
 createdAt: "2018-09-15T12:38:25.572Z"
-updatedAt: "2018-09-15T12:57:44.066Z"
+updatedAt: "2018-09-15T13:03:54.953Z"
 type: "MARKDOWN_NOTE"
 folder: "2bd4debf0edd3bd73c5f"
 title: "git基本操作"
@@ -22,6 +22,11 @@ content: '''
   	git pull origin master --allow-unrelated-histories （`Ctr + X`退出）
   #### 6.提交项目
   	git push origin master  // 直接提交代码
+  
+  > 大致思路：本地存在一个Repository,每次提交代码之前先提交至本地Repository，再发送至远程服务器
+  > ![bg2014061202.jpg](:storage/de5d4852-514f-47ee-88c4-35728aad7d59/9d9ab430.jpg)
+  > 
+  # git 更新
   
 '''
 tags: []
