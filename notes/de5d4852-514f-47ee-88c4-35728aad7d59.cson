@@ -1,5 +1,5 @@
 createdAt: "2018-09-15T12:38:25.572Z"
-updatedAt: "2018-09-15T13:03:54.953Z"
+updatedAt: "2018-09-15T13:35:51.883Z"
 type: "MARKDOWN_NOTE"
 folder: "2bd4debf0edd3bd73c5f"
 title: "git基本操作"
@@ -7,16 +7,17 @@ content: '''
   # git基本操作
   
   ### 设置全局参数
-  > it config --global user.name "czm-523"
-    git config --global user.email "1034946691@qq.com"
+  > `it config --global user.name "czm-523"`
+    `git config --global user.email "1034946691@qq.com"`
     
-  #### 1. 进入要上传的文件夹目录
+  #### 1. 进入要上传的文件夹目录，在本目录生成Repository
    	git init    //执行指令进行初始化，会在原始文件夹中生成一个隐藏的文件夹.git：
   #### 2. 执行指令将文件添加到本地仓库
    	git add .     //添加当前文件夹下的所有文件
   #### 3. 输入本次的提交说明，准备提交暂存区中的更改的已跟踪文件，单引号内为说明内容：
    	git commit -m "layout" //引号中的内容为对该文件的描述
-  #### 4.在github中新建一个repository，复制仓库地址：
+  
+  #### 4.在github中新建一个repository
   	git remote add origin https://github.com/czm-523/testgit.git
   #### 5.先同步github的内容
   	git pull origin master --allow-unrelated-histories （`Ctr + X`退出）
@@ -26,7 +27,16 @@ content: '''
   > 大致思路：本地存在一个Repository,每次提交代码之前先提交至本地Repository，再发送至远程服务器
   > ![bg2014061202.jpg](:storage/de5d4852-514f-47ee-88c4-35728aad7d59/9d9ab430.jpg)
   > 
-  # git 更新
+  # 项目提交更新
+  > 入目录
+  > `git status` 对比本地Repository和工作空间的文件的差异性
+  > `git commit -m '提交描述'` 提交至本地Repository
+  > `git pull` 拉取remote Repository 中的差异性文件，同步服务器
+  > `git push` 提交
+  
+  # 克隆项目
+  > 1.设置全局参数。重复操作1
+  > 2.git clone https//github.com/userName/projectName.git
   
 '''
 tags: []
