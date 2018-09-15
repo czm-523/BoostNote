@@ -1,0 +1,29 @@
+createdAt: "2018-09-15T12:38:25.572Z"
+updatedAt: "2018-09-15T12:57:44.066Z"
+type: "MARKDOWN_NOTE"
+folder: "2bd4debf0edd3bd73c5f"
+title: "git基本操作"
+content: '''
+  # git基本操作
+  
+  ### 设置全局参数
+  > it config --global user.name "czm-523"
+    git config --global user.email "1034946691@qq.com"
+    
+  #### 1. 进入要上传的文件夹目录
+   	git init    //执行指令进行初始化，会在原始文件夹中生成一个隐藏的文件夹.git：
+  #### 2. 执行指令将文件添加到本地仓库
+   	git add .     //添加当前文件夹下的所有文件
+  #### 3. 输入本次的提交说明，准备提交暂存区中的更改的已跟踪文件，单引号内为说明内容：
+   	git commit -m "layout" //引号中的内容为对该文件的描述
+  #### 4.在github中新建一个repository，复制仓库地址：
+  	git remote add origin https://github.com/czm-523/testgit.git
+  #### 5.先同步github的内容
+  	git pull origin master --allow-unrelated-histories （`Ctr + X`退出）
+  #### 6.提交项目
+  	git push origin master  // 直接提交代码
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
