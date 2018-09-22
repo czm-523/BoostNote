@@ -1,0 +1,20 @@
+createdAt: "2018-09-22T06:27:29.690Z"
+updatedAt: "2018-09-22T06:32:29.838Z"
+type: "MARKDOWN_NOTE"
+folder: "4b6937ffbc6ca733523c"
+title: "shell"
+content: '''
+  # shell 
+  ## 变量
+  - 命名: 不需要申明类型,结尾不要分隔符 	
+  `eg: name = "zhaoming.com"`
+  - 隐式申明变量
+  for file in `ls /etc` 
+  - 使用变量:前面加上$符号
+  - echo $name
+  - 
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

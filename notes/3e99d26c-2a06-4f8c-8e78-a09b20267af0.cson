@@ -1,0 +1,15 @@
+createdAt: "2018-09-15T15:39:42.567Z"
+updatedAt: "2018-09-15T15:53:16.896Z"
+type: "MARKDOWN_NOTE"
+folder: "7e29a740260ac6dc97a7"
+title: "I/O多路复用技术"
+content: '''
+  # I/O多路复用技术
+  > select:IO多路复用技术通过把多个IO阻塞复用到同一个select的阻塞上，使用单线程同时监听多个客户端的请求。
+  
+  > epoll: 打开的socket文件句柄没有限制，使用mmap加速内存与用户空间传递消息
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

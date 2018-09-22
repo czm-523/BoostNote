@@ -1,5 +1,5 @@
 createdAt: "2018-09-15T12:38:25.572Z"
-updatedAt: "2018-09-15T13:35:51.883Z"
+updatedAt: "2018-09-15T15:32:21.518Z"
 type: "MARKDOWN_NOTE"
 folder: "2bd4debf0edd3bd73c5f"
 title: "git基本操作"
@@ -36,7 +36,7 @@ content: '''
   
   # 克隆项目
   > 1.设置全局参数。重复操作1
-  > 2.git clone https//github.com/userName/projectName.git
+  > 2.`git clone https//github.com/userName/projectName.git`
   
 '''
 tags: []
